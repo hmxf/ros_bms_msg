@@ -1,0 +1,4 @@
+<launch> 
+    <node pkg="ros_bms_msg" type="ros_bms_msg" name="ros_bms_talker" output="screen" />         
+    <param name="bms_port" value="/dev/ttyUSB0" />     
+</launch>

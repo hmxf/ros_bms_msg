@@ -157,9 +157,9 @@ int main(int argc,char **argv)
         {
             // ROS_INFO("3");
             
-            u8 tem_check = return_robot_data.rx_buffer[5]; 
+            u8 temp_check = return_robot_data.rx_buffer[5]; 
             ROS_INFO("3check:%X,3tempcheck:%X",check,TempCheck);
-            tem =  tem_check -40;
+            temp =  temp_check -40;
         }
           if(return_robot_data.rx_buffer[0] == 0xA5 && return_robot_data.rx_buffer[2] == 0x98 &&  return_robot_data.rx_buffer[12] == check )
         {
